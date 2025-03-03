@@ -21,6 +21,10 @@ Click the button below to deploy this project on **Vercel** instantly:
 [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/BatBytes/Batstream)
 
 
+⚠ Note: If deploying on a free hosting service, make sure to use proxy routing or rely on an external API to avoid request limitations.
+
+
+
 ## 🚀 **How to Run the Application**  
 
 ### **1️⃣ Install Requirements**  
