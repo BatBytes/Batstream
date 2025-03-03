@@ -70,5 +70,5 @@ python app.py
 
 ---
 
-### **🎥 Ready to watch videos? Start the application and enjoy! 🚀**
+### **🎥 Start the application and enjoy!! 🚀**
 
