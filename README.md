@@ -41,7 +41,7 @@ python app.py
 
 ## 📂 **Project Structure**  
 ```
-📁 project-folder
+📁 Batstream
 🗃️ app.py               # Main application file
 🗃️ movie.py             # Video scraping module
 🗃️ api_helper.py        # API helper for fetching video data
@@ -66,7 +66,7 @@ python app.py
 
 ## 📞 **Contact**  
 🔹 Telegram: [t.me/BatByte](https://t.me/BatByte)  
-🔹 GitHub: [github.com/YourUsername](https://github.com/BatBytes)  
+🔹 GitHub: [github.com/BatByte](https://github.com/BatBytes)  
 
 ---
 
