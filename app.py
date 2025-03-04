@@ -1,6 +1,9 @@
+# Coded BY -> t.me/BatByte .
 from flask import Flask, render_template, request, redirect, Response
-#from movie import *
-from api_helper import *
+from movie import *
+#from api_helper import *
+###----->>> <<<-----###
+
 app = Flask(__name__)
 
 data = {}
