@@ -1,13 +1,13 @@
+# Coded BY -> t.me/BatByte .
 import requests,re
 from bs4 import BeautifulSoup
 import base64
 from urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
-
-
+###----->>> <<<-----###
 
 def search_videos(query):
-    base_url = "https://ser.brstej.com/search.php"
+    url = "https://ser.brstej.com/search.php"
     headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'Accept-Language': 'en-US,en;q=0.9,ar;q=0.8',
@@ -29,7 +29,7 @@ def search_videos(query):
     
     while True:
         params['page'] = page
-        response = requests.get(base_url, params=params, headers=headers, verify=False)
+        response = requests.get(url, params=params, headers=headers, verify=False)
         soup = BeautifulSoup(response.text, "html.parser")
 
         videos = soup.find_all("li", class_="col-xs-6 col-sm-4 col-md-3")
@@ -58,7 +58,7 @@ def search_videos(query):
     return {"success":True,"result":all_videos,"By":"t.me/BatByte"}
 
 def get_serverdownload(vid):
-    base_url = "https://ser.brstej.com/play.php?vid="+vid
+    url = "https://ser.brstej.com/play.php?vid="+vid
 
     headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
@@ -76,7 +76,7 @@ def get_serverdownload(vid):
     'sec-ch-ua-mobile': '?0',
     'sec-ch-ua-platform': '"Windows"',
     }
-    response = requests.get(base_url, headers=headers, verify=False)
+    response = requests.get(url, headers=headers, verify=False)
     
     if response.status_code != 200:
         return {"success":False,"result":[],"By":"t.me/BatByte"}
