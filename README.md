@@ -1,4 +1,4 @@
-# 🎥 Video Search & Streaming App  
+# 🎥 Video Search & Video  Streaming  (Batstream)
 ## 🚀 A Project for Searching and Streaming Videos Online  
 
 ### 📌 **Project Description**  
